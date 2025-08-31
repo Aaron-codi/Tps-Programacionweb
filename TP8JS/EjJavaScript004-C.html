@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Ej4-a</title>
+    </head>
+    <body>
+
+        <script>
+            alert("Alertita");
+            var si=confirm("¿Confirmar confirmacion?");
+      
+            if(si==true){
+                document.write("Confirmacion exitosa<br>");
+                var datos="Datos personales";
+                var nombre=prompt("Ingresa tu nombre");
+                var edad=prompt("Ingresa tu edad");
+                var estado_civil=prompt("Ingresa tu estado civil");
+                var fecha_nac=prompt("Ingresa tu fecha de nacimiento");
+                var dni=prompt("Ingresa tu DNI");
+                document.write(datos+"<br>");
+                document.write("Nombre: "+nombre+"<br>");
+                document.write("Edad: "+edad+"<br>");
+                document.write("Estado civil: "+estado_civil+"<br>");
+                document.write("Fecha de nacimiento: "+fecha_nac+"<br>");
+                document.write("dni: "+dni+"<br>");
+            }
+            else{
+                document.write("Cancelacion exitosa");
+            }
+ 
+        </script>
+    </body>
+</html>
