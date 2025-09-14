@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>factorial</title>
+    </head>
+    <body onload="factorial()">
+        <script type="text/javascript">
+            var n= prompt("Ingrese un numero para calcular su factorial");
+            function factorial(n){
+                if (n == 0 || n == 1) {
+                    return 1;
+                } else {
+                    return n * factorial(n-1);
+                }
+            }
+            var resultado = factorial(parseInt(n));
+            document.write(resultado);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Convesor monetario</title>
+        <script type="text/javascript" src="JavaScript/EjJavaScript005-C.js"></script>
+
+    </head>
+
+    <body>
+        <script>
+            var Opcion = prompt("Ingrese las siguientes opciones: \n 1. Convertir de pesos a dolares \n 2. Convertir de dolares a pesos \n 3. Convertir de pesos a reales \n 4. Convertir de reales a pesos \n 5. Convertir de pesos a euros \n 6. Convertir de euros a pesos");
+            if (Opcion == 1) {
+                p_a_d();
+            } 
+            else if (Opcion == 2) {
+                d_a_p();
+
+            } 
+            else if ( Opcion== 3) {
+                p_a_r();
+                
+            } 
+            else if ( Opcion== 4) {
+                r_a_p();
+                
+            } 
+            else if ( Opcion== 5) {
+                p_a_e();                
+            } 
+            else if (Opcion == 6) {
+                e_a_p();
+            } 
+            else {
+                document.write("Opcion no valida");
+            }
+
+        </script>
+    </body>
+</html>

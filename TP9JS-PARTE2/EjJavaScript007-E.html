@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>primos</title>
+    </head>
+    <body onload="primos()">
+        <script type="text/javascript">
+            function primos(){
+                for(var n=0; n<=100; n++){
+                    var divisores=0;
+                    for(var i=1; i<=n; i++){
+                        if(n % i == 0){
+                            divisores++;
+                        }
+                    }        
+                
+                    if(divisores == 2){
+                        document.write("<div>" + n + "</div>");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
