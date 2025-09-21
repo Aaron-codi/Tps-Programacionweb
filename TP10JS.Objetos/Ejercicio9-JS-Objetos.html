@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>ej1</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var diccionario = {
+                "hola": "hello",
+                "mundo": "world",
+                "mensaje": "message"
+            };
+            var men= new String(prompt("ingresa un mensaje"));
+            
+            document.write(men.toUpperCase())
+            document.write("<br>"+men.toLowerCase())
+            document.write("<br>"+men.substr(5,10))
+            if(men.indexOf("hola")!=-1){
+                document.write("<br> Hola que tal")
+            }else{
+                document.write("<br> No se encontro 'HOLA' en el mensaje enviado")
+            }
+var sinEspacios =men.replace(/\s+/g, '');
+document.write("<br>"+sinEspacios+"<br>");
+
+
+var palabras =men.toLowerCase().split(" ");
+var traducido = palabras.map(function(p) {
+    if(diccionario[p]) {
+        return diccionario[p];
+    }
+    else {
+        return p; 
+    } 
+}).join(" ");
+
+document.write(traducido);
+
+            
+</script>
+    </body>
+</html>

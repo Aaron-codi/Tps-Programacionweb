@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        function Mostrar(){
+            var a= new Date();
+            var dia=a.getDay();
+            var mes=a.getMonth()+1;
+            var anio=a.getFullYear();
+            var hora=a.getHours();
+            var min=a.getMinutes();
+            var seg=a.getSeconds();
+            var nom = document.getElementById("nombre").value;
+            var mensaje = document.getElementById("msj").value;
+
+            document.getElementById("MOSTRAR").innerHTML+=dia + "/" + mes + "/" + anio + " " + hora+":" + min + ":" + seg + " por " + nom + "<br>" + mensaje+"<br>";
+        document.getElementById("msj").value = "";
+        document.getElementById("msj").focus();
+        }
+        
+
+    </script>
+
+    <form>
+        <label for="nombre" >Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <textarea id="msj" name="mensaje" rows="4" cols="50">
+            
+        </textarea>
+
+        <input type="button" value="Enviar mensaje" onclick="Mostrar()">
+    </form>
+    <p id="MOSTRAR">
+
+    </p>
+</body>
+</html>

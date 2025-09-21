@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--a- Desarrollar una página que imprima en pantalla:
+     La Fecha actual, la hora, minutos y segundos.
+     La cantidad de días, horas, minutos y segundos que faltan para navidad.
+    -->
+    <script>
+        var d=new Date();
+        var dia=d.getDate();
+        var mes=d.getMonth();
+        var anio=d.getFullYear();
+        var hora=d.getHours();
+        var minutos=d.getMinutes(); 
+        var segundos=d.getSeconds();
+        function navidad(dia,hora,minutos,segundos,mes){
+            var diarest=365-((mes*30)+dia);
+            var  horarest=24-hora;
+            var minrest=60-minutos;
+            var segrest=60-segundos;
+            document.write("Faltan para navidad:  "+diarest+" dias, "+horarest+" horas, "+minrest+" minutos y "+segrest+" segundos");
+        }
+        document.write("Fecha general:  "+dia+"/"+mes+"/"+anio+"<br>");
+        document.write("Hora actual:  "+hora+":"+minutos+":"+segundos+"<br>");
+        navidad(dia,hora,minutos,segundos,mes);
+    </script>
+</body>
+</html>
